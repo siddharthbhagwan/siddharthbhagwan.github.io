@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body {
+  font-family: Lato !important;
+  
+}
+
+.main-frame {
+  margin-top: 5%;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.name {
+  padding: 3%;
+}
+
+.profile-pic {
+  padding: 0% 0% 2% 0%;
+}
+
+.profile-pic img {
+  width: 90px;
+  border-radius: 50px;
+}
+
+.intro {
+  font-size: 21px;
+  text-align: none;
+}
+
+.links {
+  margin: 4% 0% 4% 0%;
+}
+
+.link-desc {
+  text-align: center;
+  padding: 2%;
+}
