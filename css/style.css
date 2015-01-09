@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  font-family: Lato !important;
+  font-family: Raleway !important;
   
 }
 
@@ -11,14 +11,20 @@ body {
   background-color: #fafafa;
   border-radius: 5px;
   font-size: 30px;
+  padding: 2% 0% 2% 0%;
 }
 
-.name {
-  padding: 3%;
+.duration {
+  font-size: 13px;
+  font-style: italic;
 }
 
 .profile-pic {
   padding: 0% 0% 2% 0%;
+}
+
+.quote {
+  font-size: 25px;
 }
 
 .profile-pic img {
@@ -29,6 +35,7 @@ body {
 .intro {
   font-size: 21px;
   text-align: none;
+  margin-bottom: 2%
 }
 
 .links {
@@ -37,5 +44,72 @@ body {
 
 .link-desc {
   text-align: center;
-  padding: 2%;
+  margin: 5%;
+  font-size: 16px;
+}
+
+.override-link {
+  color: black;
+}
+
+.resume-heading {
+  background-color: #fafafa;
+  border-radius: 5px;
+  font-size: 20px !important;
+  padding: 1% 0% 1% 0%;
+}
+
+.resume-addr {
+  font-size: 14px !important;
+}
+
+.fa-sm {
+  font-size: 90%;
+}
+
+.resume-page {
+  background-color: #fafafa;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 1% 0% 1% 0%;
+  margin-top: 1%;
+}
+
+.resume-set {
+  margin-bottom: 25px;
+}
+
+.resume-heading {
+  font-size: 18px;
+}
+
+.resume-pts {
+  font-size: 15px;
+}
+
+.resume-sub {
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.back-link {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.pic {
+  border-width:50px;
+  border-color:rgba(0,0,0,0);
+  
+  -webkit-transition:0.5s ease;
+  -moz-transition:0.5s ease;
+  -ms-transition:0.5s ease;
+  -o-transition:0.5s ease;
+  transition:0.5s ease;
+  border-style:solid;
+}
+
+.pic:hover {
+    border-width:0;
+    border-color:rgba(0,0,0,0.5);
 }
