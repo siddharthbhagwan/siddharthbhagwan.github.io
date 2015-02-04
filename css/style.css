@@ -52,6 +52,10 @@ body {
   color: black;
 }
 
+.override-link1 {
+  color: rgb(23, 108, 237);
+}
+
 .resume-heading {
   background-color: #fafafa;
   border-radius: 5px;
