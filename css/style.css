@@ -34,7 +34,7 @@ body {
 }
 
 .intro {
-  font-size: 21px;
+  font-size: 19px;
   text-align: none;
   margin-bottom: 2%;
 }
@@ -143,4 +143,8 @@ body {
 
 .fa-twitter {
   color: #00aced;
+}
+
+.fa-linkedin {
+  color: #007bb6;
 }
