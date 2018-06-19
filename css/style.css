@@ -6,6 +6,7 @@ body {
 
 .main-frame {
   margin-top: 5%;
+  margin-bottom: 5%;
   text-align: center;
   background-color: #fafafa;
   border-radius: 5px;
@@ -21,7 +22,6 @@ body {
 .profile-pic {
   margin: 3% 0% 1% 0%;
   padding: 0% 0% 2% 0%;
-
 }
 
 .quote {
@@ -36,7 +36,7 @@ body {
 .intro {
   font-size: 21px;
   text-align: none;
-  margin-bottom: 2%
+  margin-bottom: 2%;
 }
 
 .links {
@@ -97,6 +97,10 @@ body {
   margin-top: 1%;
 }
 
+.links {
+  margin-bottom: 50px;
+}
+
 .back-link {
   margin-top: 3%;
   text-align: center;
@@ -109,4 +113,34 @@ body {
   padding: 1% 0% 1% 0%;
   margin-top: 1%;
   text-align: center;
+}
+
+.connectIcons {
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid #dddddd;
+}
+
+.connectIcons i {
+  padding: 2px;
+  font-size: 25px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0px 5px 0px 5px;
+}
+
+.fa-goodreads {
+  color: #553b08;
+}
+
+.fa-spotify {
+  color: #1db954;
+}
+
+.fa-instagram {
+  color: #517fa4;
+}
+
+.fa-twitter {
+  color: #00aced;
 }
