@@ -166,19 +166,6 @@
       </div>
     </div>
 
-    <!-- Zoom overlay: opens when the EBC thumbnail is clicked. Hides all other page content while open and shows only relevant names and the route. -->
-    <div class="zoom-overlay" role="dialog" aria-modal="true" aria-hidden="true">
-      <div class="zoom-content">
-        <button class="zoom-close" aria-label="Close zoom">&times;</button>
-        <img src="images/EBC.png" class="zoom-map" alt="Everest Base Camp map" />
-        <div class="zoom-info">
-          <h2>Everest Base Camp Route</h2>
-          <p class="route"><strong>Route:</strong> Kathmandu → Lukla → Namche Bazaar → Tengboche → Dingboche → Lobuche → Everest Base Camp</p>
-          <p class="relevant"><strong>Relevant names:</strong> Lukla, Namche Bazaar, Tengboche, Dingboche, Lobuche, Everest Base Camp</p>
-        </div>
-      </div>
-    </div>
-
     <script>
       (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
@@ -201,61 +188,6 @@
       );
       ga("create", "UA-59342737-1", "auto");
       ga("send", "pageview");
-    </script>
-
-    <script>
-      // JS to open the zoom overlay and hide other page content
-      (function () {
-        var ebcThumb = document.querySelector('.ebc-thumb');
-        var overlay = document.querySelector('.zoom-overlay');
-        var closeBtn = document.querySelector('.zoom-close');
-
-        function openOverlay(e) {
-          e && e.preventDefault();
-          if (!overlay) return;
-          overlay.setAttribute('aria-hidden', 'false');
-          overlay.classList.add('open');
-          // add class to body so CSS can hide page content
-          document.body.classList.add('zoom-open');
-          // mark main content as hidden for screen readers
-          var main = document.querySelector('.main-frame');
-          if (main) main.setAttribute('aria-hidden', 'true');
-          // focus the close button for accessibility
-          closeBtn && closeBtn.focus();
-        }
-
-        function closeOverlay() {
-          if (!overlay) return;
-          overlay.setAttribute('aria-hidden', 'true');
-          overlay.classList.remove('open');
-          document.body.classList.remove('zoom-open');
-          var main = document.querySelector('.main-frame');
-          if (main) main.removeAttribute('aria-hidden');
-        }
-
-        if (ebcThumb) {
-          ebcThumb.style.cursor = 'zoom-in';
-          var parentLink = ebcThumb.closest('a');
-          if (parentLink) {
-            parentLink.addEventListener('click', function (ev) {
-              ev.preventDefault();
-              openOverlay(ev);
-            });
-          } else {
-            ebcThumb.addEventListener('click', openOverlay);
-          }
-        }
-
-        closeBtn && closeBtn.addEventListener('click', closeOverlay);
-        // close when clicking outside content
-        overlay && overlay.addEventListener('click', function (ev) {
-          if (ev.target === overlay) closeOverlay();
-        });
-        // close on escape
-        document.addEventListener('keydown', function (ev) {
-          if (ev.key === 'Escape') closeOverlay();
-        });
-      })();
     </script>
   </body>
 </html>
