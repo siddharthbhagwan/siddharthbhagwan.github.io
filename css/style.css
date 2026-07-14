@@ -141,10 +141,14 @@ body {
   color: #517fa4;
 }
 
-.fa-twitter {
-  color: #00aced;
+.fa-x-twitter {
+  color: #000000;
 }
 
 .fa-linkedin {
   color: #007bb6;
+}
+
+.rozka-thumb {
+  border-radius: 12px;
 }

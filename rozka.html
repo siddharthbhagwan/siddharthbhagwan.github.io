@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+  <head>
+    <title>RozKa – Habit Tracker</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="RozKa – personal time-based habit tracker" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .rozka-wrap {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .rozka-bg-icon {
+        position: absolute;
+        right: -60px;
+        bottom: -40px;
+        width: 320px;
+        opacity: 0.06;
+        transform: rotate(14deg);
+        border-radius: 64px;
+        pointer-events: none;
+        z-index: 0;
+        user-select: none;
+      }
+
+      .rozka-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .rozka-logo {
+        width: 100px;
+        border-radius: 22px;
+        margin: 20px 0 12px 0;
+      }
+
+      .rozka-tagline {
+        font-size: 16px;
+        color: #777;
+        margin-bottom: 8px;
+        font-weight: 300;
+      }
+
+      .rozka-pills {
+        margin: 14px 0 24px 0;
+      }
+
+      .rozka-pill {
+        display: inline-block;
+        margin: 4px;
+        padding: 5px 14px;
+        background: #ffffff;
+        border: 1px solid #c2e6e1;
+        border-radius: 7px;
+        font-size: 13px;
+        color: #555;
+        font-weight: 400;
+      }
+
+      .rozka-divider {
+        border: none;
+        border-top: 1px solid #ebebeb;
+        margin: 22px auto;
+        max-width: 420px;
+      }
+
+      .rozka-section {
+        font-size: 15px;
+        text-align: left;
+        max-width: 500px;
+        margin: 0 auto 20px auto;
+        line-height: 1.7;
+        color: #444;
+      }
+
+      .rozka-section h4 {
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        color: #aaa;
+        margin-bottom: 8px;
+      }
+
+      .rozka-section ul {
+        padding-left: 20px;
+        margin: 0;
+      }
+
+      .rozka-section li {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #555;
+      }
+
+      .rozka-section p {
+        font-size: 14px;
+        color: #555;
+        margin: 0;
+      }
+
+      .download-btn {
+        display: inline-block;
+        margin: 8px 6px;
+        padding: 12px 28px;
+        background: #ffffff;
+        color: #222 !important;
+        border: 1.5px solid #bbb;
+        border-radius: 10px;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: Raleway, sans-serif;
+        letter-spacing: 0.02em;
+        transition: background 0.2s, border-color 0.2s;
+      }
+
+      .download-btn:hover {
+        background: #f5f5f5;
+        border-color: #999;
+        text-decoration: none;
+        color: #222 !important;
+      }
+
+      .download-btn i {
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="col-md-8 col-md-offset-2 main-frame rozka-wrap">
+
+      <!-- Very faint background icon -->
+      <img src="images/rozka.png" class="rozka-bg-icon" alt="" />
+
+      <div class="rozka-content">
+
+        <img src="images/rozka.png" class="rozka-logo" alt="RozKa logo" />
+
+        <div style="font-size: 24px; font-weight: 400; margin-bottom: 4px;">RozKa</div>
+        <div class="rozka-tagline">A personal time-based habit tracker.</div>
+        <div style="font-size: 13px; color: #bbb; margin-bottom: 6px;">
+          by <a href="https://x.com/siddhartha_b" target="_blank" style="color: #999; text-decoration: none;">@siddhartha_b</a>
+        </div>
+
+        <!-- Feature pills -->
+        <div class="rozka-pills">
+          <span class="rozka-pill">Momentum</span>
+          <span class="rozka-pill">Total time</span>
+          <span class="rozka-pill">Streak</span>
+          <span class="rozka-pill">Calendar</span>
+          <span class="rozka-pill">Local-first</span>
+        </div>
+
+        <hr class="rozka-divider" />
+
+        <div class="rozka-section">
+          <h4>What it does</h4>
+          <p>
+            Log minutes, not just streaks. Add a habit, set a time goal if you want one, and record each session.
+          </p>
+        </div>
+
+        <div class="rozka-section">
+          <h4>Views</h4>
+          <ul>
+            <li><strong>Momentum:</strong> Rises with each session, decays through gaps. A long streak softens the cost of a missed day.</li>
+            <li><strong>Total time:</strong> Cumulative hours logged, with goal progress when you&rsquo;ve set one.</li>
+            <li><strong>Streak:</strong> Every unbroken run shown as a column.</li>
+            <li><strong>Sessions / Calendar:</strong> Fill glasses scaled to your best day in a &plusmn;7-day window. Tap any day to log minutes.</li>
+          </ul>
+        </div>
+
+        <div class="rozka-section">
+          <h4>Storage</h4>
+          <p>
+            Local-first. Your data stays on your device. No account needed.
+          </p>
+        </div>
+
+        <hr class="rozka-divider" />
+
+        <div style="margin: 16px 0 8px 0;">
+          <span style="display: inline-block; padding: 4px 14px; background: #ffffff; color: #4cb8a8; border: 1px solid #c2e6e1; border-radius: 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.04em;">Free</span>
+        </div>
+        <div style="margin: 8px 0 24px 0;">
+          <a
+            href="https://expo.dev/@siddharthabhagwan/RozKa"
+            class="download-btn"
+            target="_blank"
+          >
+            <i class="fa-solid fa-download"></i>Download on Expo Go
+          </a>
+        </div>
+
+        <div class="back-link" style="font-size: 14px; margin-top: 8px;">
+          <a href="/" class="override-link">&larr; Back to home</a>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
