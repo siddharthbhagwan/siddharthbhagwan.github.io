@@ -29,6 +29,8 @@
       .rozka-wrap {
         position: relative;
         overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
       }
 
       .rozka-bg-icon {
@@ -145,6 +147,42 @@
       .download-btn i {
         margin-right: 8px;
       }
+
+      @media (max-width: 767px) {
+        .rozka-wrap {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        .rozka-section {
+          max-width: 100%;
+          font-size: 14px;
+        }
+
+        .rozka-bg-icon {
+          width: 200px;
+          right: -30px;
+          bottom: -20px;
+        }
+
+        .download-btn {
+          display: block;
+          width: 100%;
+          max-width: 320px;
+          margin: 8px auto;
+          box-sizing: border-box;
+          text-align: center;
+        }
+
+        .rozka-pill {
+          font-size: 12px;
+          padding: 4px 10px;
+        }
+
+        .rozka-logo {
+          width: 80px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -199,10 +237,8 @@
         </div>
 
         <div class="rozka-section" style="border-left: 3px solid #c2e6e1; padding-left: 14px; margin-top: 4px;">
-          <p style="font-style: italic; color: #555; line-height: 1.65; margin: 0;">
-            Your best looks different each day. A perfect streak and a broken one both count.
-            Showing up is the thing. Doing this beats having a perfect plan.
-          </p>
+          <h4>Idea</h4>
+          <p style="font-style: italic;">There&rsquo;s no bad streak, only a missed day.</p>
         </div>
 
         <hr class="rozka-divider" />
