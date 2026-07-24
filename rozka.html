@@ -132,6 +132,48 @@
         margin-right: 8px;
       }
 
+      .get-app-desktop {
+        display: block;
+        margin: 8px 0 6px 0;
+      }
+
+      .get-app-mobile {
+        display: none;
+        margin: 8px 0 6px 0;
+      }
+
+      .rozka-qr {
+        width: 168px;
+        height: 168px;
+        border-radius: 12px;
+        border: 1px solid #e5e5e5;
+        background: #fff;
+        padding: 8px;
+        box-sizing: border-box;
+        margin: 4px auto 12px auto;
+        display: block;
+      }
+
+      .get-app-hint {
+        font-size: 13px;
+        color: #777;
+        margin: 0 0 10px 0;
+        line-height: 1.5;
+      }
+
+      .phone-only-badge {
+        display: inline-block;
+        padding: 3px 10px;
+        background: #ffffff;
+        color: #888;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        margin-bottom: 12px;
+      }
+
       @media (max-width: 767px) {
         .rozka-wrap {
           padding-left: 20px;
@@ -160,6 +202,14 @@
 
         .rozka-logo {
           width: 80px;
+        }
+
+        .get-app-desktop {
+          display: none;
+        }
+
+        .get-app-mobile {
+          display: block;
         }
       }
     </style>
@@ -211,18 +261,37 @@
         <div style="margin: 16px 0 8px 0;">
           <span style="display: inline-block; padding: 4px 14px; background: #ffffff; color: #4cb8a8; border: 1px solid #c2e6e1; border-radius: 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.04em;">Free</span>
         </div>
-        <div style="margin: 8px 0 6px 0;">
+
+        <!-- Desktop: QR (Expo Go is phone-only) -->
+        <div class="get-app-desktop">
+          <div class="phone-only-badge">Phone only</div>
+          <p class="get-app-hint">
+            Scan with your phone camera to open RozKa in Expo Go.
+            Anyone with Expo Go can use this link. No App Store listing.
+          </p>
+          <img
+            class="rozka-qr"
+            src="https://qr.expo.dev/eas-update?projectId=3a7687f8-b72e-45dc-87a5-4fe4e8e33348&amp;runtimeVersion=exposdk:54.0.0&amp;channel=main"
+            alt="QR code to open RozKa in Expo Go"
+            width="168"
+            height="168"
+          />
+        </div>
+
+        <!-- Mobile: deep link into Expo Go -->
+        <div class="get-app-mobile">
           <a
-            href="exp://u.expo.dev/3a7687f8-b72e-45dc-87a5-4fe4e8e33348?channel-name=main"
+            href="exp://u.expo.dev/3a7687f8-b72e-45dc-87a5-4fe4e8e33348?runtime-version=exposdk%3A54.0.0&amp;channel-name=main"
             class="download-btn"
           >
             <i class="fa-solid fa-download"></i>Open in Expo Go
           </a>
         </div>
+
         <div style="font-size: 12px; color: #999; margin-bottom: 24px;">
           Needs the free
           <a href="https://expo.dev/go" target="_blank" style="color: #999;">Expo Go</a>
-          app installed first.
+          app installed first. Share this page; the QR / button works for anyone.
         </div>
 
         <div class="back-link" style="font-size: 14px; margin-top: 8px;">
