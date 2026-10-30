@@ -55,7 +55,7 @@ body {
 }
 
 .project {
-  width: 180px;
+  width: 240px;
 }
 
 .project img {
@@ -63,10 +63,14 @@ body {
   height: 100px;
 }
 
+.project .link-desc {
+  font-size: 20px;
+}
+
 .project-sub {
-  font-size: 11px;
-  color: #444;
-  margin-top: 3px;
+  font-size: 15px;
+  color: #555;
+  margin-top: 4px;
 }
 
 .social-row {
