@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 body {
-  font-family: Raleway !important;
+  font-family: Fraunces, serif !important;
+  letter-spacing: 0.045em;
+  line-height: 1.45;
 }
 
 .main-frame {
