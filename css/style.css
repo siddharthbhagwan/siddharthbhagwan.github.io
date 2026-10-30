@@ -43,6 +43,34 @@ body {
   margin: 4% 0% 4% 0%;
 }
 
+.project-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 56px;
+  margin: 4% 0 4% 0;
+}
+
+.project {
+  width: 180px;
+}
+
+.project img {
+  width: 100px;
+  height: 100px;
+}
+
+.project-sub {
+  font-size: 11px;
+  color: #444;
+  margin-top: 3px;
+}
+
+.social-row {
+  margin-top: 24px;
+}
+
 .link-desc {
   text-align: center;
   margin: 5%;
