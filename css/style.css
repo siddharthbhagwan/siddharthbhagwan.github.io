@@ -151,16 +151,26 @@ body {
 
 .connectIcons {
   background-color: white;
-  border-radius: 30px;
-  border: 1px solid #dddddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 22px;
+}
+
+.connectIcons a {
+  display: flex;
+  line-height: 0;
 }
 
 .connectIcons i {
-  padding: 2px;
   font-size: 25px;
-  background-color: white;
-  border-radius: 20px;
-  margin: 0px 5px 0px 5px;
+  background-color: transparent;
+  margin: 0;
+  line-height: 1;
 }
 
 .fa-goodreads {
