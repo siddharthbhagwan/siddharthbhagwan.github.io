@@ -85,9 +85,27 @@ body {
   width: 240px;
 }
 
+.project > a {
+  display: inline-block;
+  line-height: 0;
+  border-radius: 18px;
+  outline: none;
+}
+
+.project > a:focus,
+.project > a:active {
+  outline: none;
+}
+
+.project > a:focus-visible {
+  outline: 1px solid #c8c8c8;
+  outline-offset: 3px;
+}
+
 .project img {
   width: 100px;
   height: 100px;
+  outline: none;
 }
 
 .project img.hct-thumb {
