@@ -53,7 +53,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 56px;
+  gap: 28px;
   margin: 4% 0 4% 0;
 }
 
@@ -66,8 +66,18 @@ body {
   height: 100px;
 }
 
+.project img.hct-thumb {
+  box-sizing: border-box;
+  padding: 12px;
+  background: #f9f3e2;
+  border-radius: 18px;
+  object-fit: contain;
+}
+
 .project .link-desc {
   font-size: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .project-sub {
