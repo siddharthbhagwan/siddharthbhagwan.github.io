@@ -116,10 +116,17 @@ h1 {
   column-gap: 32px;
 }
 
-.education h3,
-.role h3 {
+.education h3 {
   margin: 0;
   font-size: 14.5px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.role h3 {
+  margin: 0;
+  font-size: 15.5px;
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 1.25;
