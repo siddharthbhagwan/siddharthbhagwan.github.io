@@ -112,14 +112,14 @@ h1 {
 .rule {
   width: 177px;
   height: 1px;
-  margin: 10px auto;
+  margin: 14px auto;
   border: 0;
   background: var(--rule);
 }
 
 .role-head {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
 }
 
@@ -261,7 +261,7 @@ h1 {
   }
 
   .role-head {
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
