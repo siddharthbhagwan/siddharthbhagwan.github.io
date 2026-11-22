@@ -1,0 +1,228 @@
+:root {
+  --ink: #3c3433;
+  --rule: #d8d9d1;
+  --paper: #fefff3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.35;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.sheet {
+  max-width: 796px;
+  margin: 0 auto;
+  padding: 22px 23px 56px;
+}
+
+.home {
+  margin: 0 0 14px;
+  font-size: 13px;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.tagline {
+  margin: 0 0 8px;
+  font-size: 14.5px;
+  line-height: 1.35;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px 20px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+  font-size: 14.5px;
+}
+
+.contacts a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contacts svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex: none;
+}
+
+.summary {
+  margin: 0 0 16px;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  column-gap: 32px;
+}
+
+.education h3,
+.role h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.education p {
+  margin: 1px 0 0;
+}
+
+.rule {
+  width: 177px;
+  height: 1px;
+  margin: 16px auto;
+  border: 0;
+  background: var(--rule);
+}
+
+.role-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  display: block;
+  width: auto;
+  flex: none;
+  object-fit: contain;
+}
+
+.logo.tesla {
+  height: 40px;
+}
+
+.logo.verizon {
+  height: 36px;
+}
+
+.logo.umd {
+  height: 54px;
+}
+
+.logo.rhc {
+  height: 64px;
+}
+
+.logo.ibm {
+  height: 34px;
+}
+
+.role-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.role h3 {
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  column-gap: 18px;
+}
+
+.role p {
+  margin: 10px 0 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 700px) {
+  .sheet {
+    padding: 18px 16px 40px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .contacts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .education {
+    grid-template-columns: 1fr;
+    row-gap: 14px;
+  }
+
+  .meta {
+    grid-template-columns: 1fr;
+  }
+
+  .role-head {
+    align-items: flex-start;
+  }
+}
+
+@media print {
+  .home {
+    display: none;
+  }
+
+  body {
+    background: white;
+  }
+
+  .sheet {
+    max-width: none;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
