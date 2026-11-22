@@ -112,14 +112,14 @@ h1 {
 .rule {
   width: 177px;
   height: 1px;
-  margin: 7px auto;
+  margin: 10px auto;
   border: 0;
   background: var(--rule);
 }
 
 .role-head {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
 }
 
@@ -132,23 +132,23 @@ h1 {
 }
 
 .logo.tesla {
-  height: 30px;
-}
-
-.logo.verizon {
   height: 28px;
 }
 
+.logo.verizon {
+  height: 26px;
+}
+
 .logo.umd {
-  height: 38px;
+  height: 32px;
 }
 
 .logo.rhc {
-  height: 38px;
+  height: 32px;
 }
 
 .logo.ibm {
-  height: 26px;
+  height: 24px;
 }
 
 .role-main {
@@ -156,33 +156,50 @@ h1 {
   flex: 1;
   display: grid;
   grid-template-columns: minmax(0, 1fr) max-content;
+  grid-template-areas:
+    "company when"
+    "title place";
   column-gap: 20px;
-  row-gap: 1px;
+  row-gap: 2px;
   align-items: baseline;
 }
 
 .role h3,
 .role-title {
   margin: 0;
+  line-height: 1.3;
 }
 
 .role h3 {
+  grid-area: company;
   font-weight: 500;
 }
 
+.role-title {
+  grid-area: title;
+}
+
 .role-side {
-  justify-self: start;
+  justify-self: end;
+  text-align: right;
+  font-size: 12.5px;
+  line-height: 1.3;
   white-space: nowrap;
 }
 
-.where {
+.when {
+  grid-area: when;
   display: inline-flex;
-  align-items: baseline;
-  gap: 14px;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.place {
+  grid-area: place;
 }
 
 .role p {
-  margin: 4px 0 0;
+  margin: 6px 0 0;
 }
 
 .sr-only {
@@ -230,9 +247,16 @@ h1 {
 
   .role-main {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "company"
+      "title"
+      "when"
+      "place";
   }
 
   .role-side {
+    justify-self: start;
+    text-align: left;
     white-space: normal;
   }
 
