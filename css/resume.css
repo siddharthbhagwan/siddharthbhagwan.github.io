@@ -34,6 +34,11 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+.role a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .sheet {
   width: min(210mm, calc(100% - 28px));
   min-height: 297mm;
