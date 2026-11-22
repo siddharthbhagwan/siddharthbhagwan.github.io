@@ -18,7 +18,7 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="Résumé of Siddharth Bhagwan, software engineer."
+      content="Résumé of Siddharth Bhagwan, software engineer who owns customer-facing products."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/css/resume.css" rel="stylesheet" />
@@ -27,9 +27,17 @@
     <p class="home"><a href="/">Home</a></p>
     <main class="sheet">
       <h1>Siddharth Bhagwan</h1>
-      <p class="tagline">
-        Software Engineer with 12+ years of experience building web apps.
-      </p>
+      <div class="intro">
+        <p class="tagline">
+          Continuously evolving software engineer who likes writing code and
+          tinkering with things.
+        </p>
+        <p class="summary">
+          12+ years of experience building for the web and enterprise. Pre AI,
+          front-end heavy: React and Next primarily, PHP and Node as required.
+          Post AI, I work across the stack.
+        </p>
+      </div>
 
       <ul class="contacts">
         <li>
@@ -76,12 +84,6 @@
         </li>
       </ul>
 
-      <p class="summary">
-        I’m comfortable coding with most of the development ecosystem and
-        tooling like React, Node, Next, JavaScript, Git, Splunk, Excalidraw,
-        Sketch, etc., and I enjoy working with different technologies.
-      </p>
-
       <section class="education" aria-labelledby="education-heading">
         <h2 id="education-heading" class="sr-only">Education</h2>
         <div>
@@ -89,7 +91,7 @@
           <p>University of Maryland, College Park, U.S.</p>
         </div>
         <div>
-          <h3>B.Tech. IT/Computer Science</h3>
+          <h3>B.Tech. Information Technology</h3>
           <p>PEC University of Technology, India</p>
         </div>
       </section>
@@ -118,16 +120,18 @@
           </div>
           <p>
             Across four apps in Tesla’s sales org, I currently own the
-            Acquisition Management Platform for trade-ins, lease returns, and
-            bulk acquisitions, after having shipped work for the showroom
-            point of sale, accounts, and email campaigns.
+            Acquisition Management Platform end to end, the tool advisors use
+            for trade-ins, lease returns, and bulk acquisitions, after shipping
+            the showroom point of sale and accounts, and a year on the
+            communications platform.
           </p>
           <ul>
             <li>
-              On AMP, I work with the product manager on the larger features,
-              from the requirement through design, delivery, and
-              post-production. Advisors reach out to me directly, and I work
-              with them on their bottlenecks and ship those improvements.
+              On AMP, I run discovery with advisors and product, then design,
+              deliver, and support what ships. Advisors reach out to me
+              directly with what is blocking them; I scope the fix and ship it.
+              When a feature needs another team’s contracts, data, or delivery,
+              I work that out with them.
             </li>
             <li>
               AccountOS was Tesla’s account page: a personal account holds the
@@ -142,13 +146,18 @@
               fees.
             </li>
             <li>
-              I worked on the communications platform: select a target
-              demographic from existing or potential customers or the products
-              they owned, create and select templates, and view analytics.
+              I worked on the communications platform team: a product to enable
+              audience targeting, CRUD for templates, and view analytics on the
+              results of those communications.
             </li>
             <li>
-              The tech stack has largely been front-end heavy: React, Next,
-              PHP, and Node.
+              Production work runs primarily through Workloop and Cursor;
+              preferred agents are Sonnet 5.5 / Grok 4.7, Opus 5.5 on a
+              generous budget.
+            </li>
+            <li>
+              Beyond the editor: Splunk, Grafana, Google Analytics, Jenkins,
+              and Docker for deployments and observability.
             </li>
           </ul>
         </article>
@@ -173,11 +182,10 @@
             </div>
           </div>
           <p>
-            Designed and developed map-based interactive web apps using Leaflet
-            to enable network analysis and capacity planning for 5G across the
-            US. The fun part was meeting with different managers in charge of
-            different metrics and figuring out the best visualization approach
-            for them, including custom map tooling.
+            Built map-based web apps for 5G network analysis and capacity
+            planning across the US. I worked directly with the managers who
+            owned each metric to find the right visualization, including custom
+            map tooling in Leaflet.
           </p>
         </article>
 
@@ -201,13 +209,9 @@
             </div>
           </div>
           <p>
-            The UMD Libraries SSDR team is responsible for R&amp;D, deployment
-            and support for the library application software and associated
-            systems. I worked primarily on developing custom features for
-            Mirador, a JS-based open-source image viewer used by the Library
-            Sciences program. I also worked on the University’s library and
-            spaces website, fixing bugs, extending functionality and improving
-            the UX.
+            On the UMD Libraries SSDR team, I built custom features for
+            Mirador, a JS open-source image viewer used by Library Sciences, and
+            I improved the university’s library and spaces website.
           </p>
         </article>
 
@@ -232,15 +236,22 @@
           </div>
           <p>
             We were an 8-member hardware product startup doing software
-            consulting on the side. We successfully crowdfunded an electronic
-            prototyping board for $28,000 from 26 countries. I maintained the
-            company, product and crowdfunding websites, and the developer
-            ecosystem around the product. On the consulting side, I built a
-            social platform where people could discuss, collaborate on and
-            reference Savitri, a 24,000-line poem by Nobel nominee Sri
-            Aurobindo, using Ruby on Rails templates and
-            Twitter’s Flight JS.
+            consulting on the side. We crowdfunded
+            <a href="https://www.crowdsupply.com/revealing-hour-creations/tah">Tah</a>,
+            an electronic prototyping board, for $28,000 from 26 countries.
           </p>
+          <ul>
+            <li>
+              I maintained the product and crowdfunding websites, and the
+              developer ecosystem around the product.
+            </li>
+            <li>
+              On the consulting side, I built a social platform where people
+              could discuss, collaborate on, and reference Savitri, a
+              24,000-line poem by Nobel nominee Sri Aurobindo, using Ruby on
+              Rails templates and Twitter’s Flight JS.
+            </li>
+          </ul>
         </article>
 
         <hr class="rule" />
@@ -259,10 +270,10 @@
             </div>
           </div>
           <p>
-            Enterprise application integration for the client Vodafone India.
-            SOA implementation connecting 22 teams via 12 applications for 135
-            million subscribers. Creation and consumption of SOAP services and
-            XSLT transformations using hardware in the IBM WebSphere ecosystem.
+            Enterprise integration for Vodafone India: service-oriented
+            architecture connecting 22 teams across 12 applications for 135
+            million subscribers, with SOAP services and XSLT in the IBM
+            WebSphere ecosystem.
           </p>
         </article>
       </section>
