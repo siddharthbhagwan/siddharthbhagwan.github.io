@@ -57,8 +57,12 @@ h1 {
   line-height: 1.05;
 }
 
+.intro {
+  margin: 0 0 10px;
+}
+
 .tagline {
-  margin: 0 0 12px;
+  margin: 0 0 15px;
   font-size: 13.5px;
   line-height: 1.3;
 }
@@ -96,7 +100,7 @@ h1 {
 }
 
 .summary {
-  margin: 0 0 8px;
+  margin: 0;
 }
 
 .education {
