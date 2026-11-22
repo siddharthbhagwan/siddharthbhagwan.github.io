@@ -192,6 +192,19 @@ h1 {
   margin: 6px 0 0;
 }
 
+.role ul {
+  margin: 4px 0 0;
+  padding: 0 0 0 1.1em;
+}
+
+.role li {
+  margin: 2px 0 0;
+}
+
+.role li:first-child {
+  margin-top: 0;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
