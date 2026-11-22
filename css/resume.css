@@ -287,11 +287,19 @@ h1 {
 
 @media print {
   .home {
-    display: none;
+    display: none !important;
   }
 
+  html,
   body {
-    background: white;
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    overflow: hidden;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .sheet {
@@ -301,12 +309,24 @@ h1 {
     max-height: 297mm;
     margin: 0;
     border-radius: 0;
+    box-shadow: none;
     overflow: hidden;
+    page-break-after: avoid;
+    break-after: avoid;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  a {
+  a,
+  .role a {
     text-decoration: none;
+    color: inherit;
+  }
+
+  .role,
+  .role-head,
+  .education {
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 }
