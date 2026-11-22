@@ -44,15 +44,14 @@ body {
   margin-bottom: 2%;
 }
 
-.sid-link {
-  color: #1a56c4;
+.sid-link,
+.sid-link:hover,
+.sid-link:focus,
+.sid-link:active,
+.sid-link:visited {
+  color: inherit;
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-
-.sid-link:hover,
-.sid-link:focus {
-  color: #0d3d8c;
 }
 
 .links {
