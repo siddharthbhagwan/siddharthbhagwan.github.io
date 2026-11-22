@@ -12,7 +12,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--paper);
+  background: var(--rule);
   color: var(--ink);
 }
 
@@ -35,9 +35,11 @@ a:focus-visible {
 }
 
 .sheet {
-  max-width: 796px;
-  margin: 0 auto;
-  padding: 22px 23px 56px;
+  width: min(210mm, calc(100% - 28px));
+  min-height: 297mm;
+  margin: 14px auto;
+  padding: 14mm 12mm 14mm;
+  background: var(--paper);
 }
 
 .home {
@@ -89,7 +91,7 @@ h1 {
 
 .education {
   display: grid;
-  grid-template-columns: 1.7fr 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 32px;
 }
 
@@ -140,7 +142,7 @@ h1 {
 }
 
 .logo.rhc {
-  height: 64px;
+  height: 52px;
 }
 
 .logo.ibm {
@@ -181,6 +183,9 @@ h1 {
 
 @media (max-width: 700px) {
   .sheet {
+    width: calc(100% - 16px);
+    min-height: 0;
+    margin: 8px auto;
     padding: 18px 16px 40px;
   }
 
@@ -218,7 +223,9 @@ h1 {
   }
 
   .sheet {
-    max-width: none;
+    width: auto;
+    min-height: 0;
+    margin: 0;
     padding: 0;
   }
 
